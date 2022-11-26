@@ -1,3 +1,4 @@
-data/data.db
+data.db
+data.db-journal
 .devcontainer/
 env/

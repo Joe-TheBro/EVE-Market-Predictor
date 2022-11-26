@@ -15,7 +15,7 @@ def getMarketPrices(inplace=False):
     if (r.status_code == 200):
         df = pd.read_json(r.text)
         df['date'] = dt.datetime.now()
-        con = sqlite3.connect('../data/data.db')
+        con = sqlite3.connect('data.db')
         df.to_sql(con=con, name="market_data", if_exists="append")
         con.close()
         if (inplace):
