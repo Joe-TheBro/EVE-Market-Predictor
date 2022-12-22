@@ -1,4 +1,6 @@
+data.csv
 data.db
 data.db-journal
 .devcontainer/
 env/
+notebooks/lightning_logs/
