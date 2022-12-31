@@ -4,3 +4,4 @@ data.db-journal
 .devcontainer/
 env/
 notebooks/lightning_logs/
+env.yaml
