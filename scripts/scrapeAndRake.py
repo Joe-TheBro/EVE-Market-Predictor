@@ -8,7 +8,7 @@ import pandas as pd
 
 
     
-def scrape(base_url, sub_url, identifierr, user_agent):
+def scrape(base_url, sub_url, identifier, user_agent):
     browser = mechanicalsoup.StatefulBrowser(
         user_agent=user_agent,
         raise_on_404=True,
