@@ -25,6 +25,7 @@ def scrape(base_url, sub_url, identifier, user_agent):
     browser.close()
 
 def rake():
+    print('Extracting compressed files...')
     for x in os.listdir():
         if x.endswith(".bz2"):
             # Prints only text file present in My Folder
@@ -32,6 +33,7 @@ def rake():
             data = zipfile.read() # get the decompressed data
             newfilepath = x[:-4] # assuming the filepath ends with .bz2
             open(newfilepath, 'wb').write(data) # write a uncompressed file
+    print('Condensing data...')
     file_list = [f for f in os.listdir() if f.endswith('.csv')]
     append_list = []
     for file in sorted(file_list):
