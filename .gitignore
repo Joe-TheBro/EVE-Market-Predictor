@@ -5,3 +5,4 @@ data.db-journal
 env/
 notebooks/lightning_logs/
 env.yaml
+scripts/merged-data.csv
