@@ -22,6 +22,7 @@ def scrape(base_url, sub_url, identifier, user_agent):
         browser.download_link(link=link, file=sub)
         print(f'Downloading, {link}')
         sleep(1)
+    browser.close()
 
 def rake():
     for x in os.listdir():
